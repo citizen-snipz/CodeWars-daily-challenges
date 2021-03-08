@@ -21,3 +21,9 @@ function shortcut(string) {
 // Thinkful - Number Drills: Pixelart planning
 // https://www.codewars.com/kata/58630e2ae88af44d2b0000ea/train/javascript
 const isDivisible = (wallLength, pixelSize) => wallLength % pixelSize === 0;
+
+// Exclamation marks series #1: Remove a exclamation mark from the end of string
+// https://www.codewars.com/kata/57fae964d80daa229d000126/train/javascript
+function remove(s) {
+  return s.endsWith("!") ? s.slice(0, -1) : s;
+}
