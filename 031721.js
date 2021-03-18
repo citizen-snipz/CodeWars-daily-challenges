@@ -17,3 +17,10 @@ function remove(s, n) {
 // https://www.codewars.com/kata/5963c18ecb97be020b0000a2/train/javascript
 const derive = (coefficient, exponent) =>
   `${coefficient * exponent}x^${exponent - 1}`;
+
+// Is it a palindrome?
+// https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/javascript
+function isPalindrome(x) {
+  let y = x.toLowerCase();
+  return y === y.split("").reverse().join("");
+}
