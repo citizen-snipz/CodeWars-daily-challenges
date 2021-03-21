@@ -13,3 +13,7 @@ function whatday(num) {
 
   return days[num] || "Wrong, please enter a number between 1 and 7";
 }
+
+// FIXME: Replace all dots
+// https://www.codewars.com/kata/596c6eb85b0f515834000049/train/javascript
+const replaceDots = (str) => str.split(".").join("-");
