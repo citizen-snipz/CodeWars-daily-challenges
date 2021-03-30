@@ -28,3 +28,26 @@ function NameMe(first, last) {
 function buildString(...template) {
   return `I like ${template.join(", ")}!`;
 }
+
+// Tuesday 3-30-21
+// Training JS #4: Basic data types--Array
+// https://www.codewars.com/kata/571effabb625ed9b0600107a/train/javascript
+function getLength(arr) {
+  return arr.length;
+}
+function getFirst(arr) {
+  return arr[0];
+}
+function getLast(arr) {
+  return arr[arr.length - 1];
+}
+function pushElement(arr) {
+  var el = 1;
+  arr.push(el);
+
+  return arr;
+}
+function popElement(arr) {
+  arr.pop();
+  return arr;
+}
