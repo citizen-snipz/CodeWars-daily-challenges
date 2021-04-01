@@ -51,3 +51,28 @@ function popElement(arr) {
   arr.pop();
   return arr;
 }
+
+// Wednesday 3/31/21
+// Convert to Binary
+// https://www.codewars.com/kata/59fca81a5712f9fa4700159a/train/javascript
+function toBinary(n) {
+  return Number(n.toString(2));
+}
+
+//Merge two sorted arrays into one
+// https://www.codewars.com/kata/5899642f6e1b25935d000161/train/javascript
+function mergeArrays(arr1, arr2) {
+  return [...new Set([...arr1, ...arr2])].sort((a, b) => a - b);
+}
+
+// simple calculator
+// https://www.codewars.com/kata/5810085c533d69f4980001cf/train/javascript
+function calculator(a, b, sign) {
+  console.log(a, b, sign);
+  if (isNaN(a) || isNaN(b)) return "unknown value";
+  if (sign === "+") return a + b;
+  if (sign === "-") return a - b;
+  if (sign === "*") return a * b;
+  if (sign === "/") return a / b;
+  return "unknown value";
+}
