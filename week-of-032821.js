@@ -76,3 +76,14 @@ function calculator(a, b, sign) {
   if (sign === "/") return a / b;
   return "unknown value";
 }
+
+//Thursday 4/1/21
+// Closest elevator
+// https://www.codewars.com/kata/5c374b346a5d0f77af500a5a/train/javascript
+function elevator(left, right, call) {
+  return Math.abs(left - call) < Math.abs(right - call) ? "left" : "right";
+}
+
+// No Loops 2 - You only need one
+// https://www.codewars.com/kata/57cc40b2f8392dbf2a0003ce/train/javascript
+const check = (a, x) => a.includes(x);
