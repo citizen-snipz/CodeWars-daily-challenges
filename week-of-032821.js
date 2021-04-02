@@ -87,3 +87,31 @@ function elevator(left, right, call) {
 // No Loops 2 - You only need one
 // https://www.codewars.com/kata/57cc40b2f8392dbf2a0003ce/train/javascript
 const check = (a, x) => a.includes(x);
+
+// Friday 4/2/21
+// Return to Sanity
+// https://www.codewars.com/kata/514a7ac1a33775cbb500001e/train/javascript
+function mystery() {
+  const results = { sanity: "Hello" };
+  return results;
+}
+
+// Sum of differences in array
+// https://www.codewars.com/kata/5b73fe9fb3d9776fbf00009e/train/javascript
+function sumOfDifferences(arr) {
+  const sorted = arr.sort((a, b) => b - a);
+  return sorted.reduce((acc, num, i, arr) => {
+    return acc + (num - arr[i + 1]) || acc;
+  }, 0);
+}
+
+// Highest and Lowest
+// https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
+function highAndLow(numbers) {
+  const arr = numbers.split(" ");
+  return `${Math.max(...arr)} ${Math.min(...arr)}`;
+}
+
+// Are arrow functions odd?
+// https://www.codewars.com/kata/559f80b87fa8512e3e0000f5/train/javascript
+const odds = (values) => values.filter((num) => num % 2 === 1);
