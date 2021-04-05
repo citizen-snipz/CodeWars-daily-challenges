@@ -17,3 +17,22 @@ function whoIsPaying(name) {
 var cubeChecker = function (volume, side) {
   return volume === Math.pow(side, 3) && volume > 0 && side > 0;
 };
+
+// Monday 4/5/21
+// Training JS #6: Basic data types--Boolean and conditional statements if..else
+function trueOrFalse(val) {
+  if (val) return "true";
+  else return "false";
+}
+
+// Mumbling
+// https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/javascript
+function accum(s) {
+  let repeatS = s
+    .toLowerCase()
+    .split("")
+    .map((letter, idx) => {
+      return letter.repeat(idx + 1).replace(letter[0], letter[0].toUpperCase());
+    });
+  return repeatS.join("-");
+}
