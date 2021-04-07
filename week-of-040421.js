@@ -36,3 +36,19 @@ function accum(s) {
     });
   return repeatS.join("-");
 }
+
+// Tuesday 4/6/21
+// Sum of Multiples
+// https://www.codewars.com/kata/57241e0f440cd279b5000829/train/javascript
+function sumMul(n, m) {
+  const mults = [];
+  for (let i = 0; i < m; i += n) {
+    mults.push(i);
+  }
+  return mults.length ? mults.reduce((acc, num) => acc + num, 0) : "INVALID";
+}
+
+// Fix the Bugs (Syntax) - My First Kata
+// https://www.codewars.com/kata/56aed32a154d33a1f3000018/train/javascript
+const myFirstKata = (a, b) =>
+  typeof a !== "number" || typeof b !== "number" ? false : (a % b) + (b % a);
