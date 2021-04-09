@@ -52,3 +52,12 @@ function sumMul(n, m) {
 // https://www.codewars.com/kata/56aed32a154d33a1f3000018/train/javascript
 const myFirstKata = (a, b) =>
   typeof a !== "number" || typeof b !== "number" ? false : (a % b) + (b % a);
+
+// Friday 4/9/21
+// Find the Integral
+// https://www.codewars.com/kata/59811fd8a070625d4c000013/train/javascript
+function integrate(coefficient, exponent) {
+  let exp = exponent + 1;
+  let cof = coefficient / exp;
+  return `${cof}x^${exp}`;
+}
