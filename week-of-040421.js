@@ -61,3 +61,16 @@ function integrate(coefficient, exponent) {
   let cof = coefficient / exp;
   return `${cof}x^${exp}`;
 }
+
+//Saturday 4/10/21
+// Who ate the cookie?
+// https://www.codewars.com/kata/55a996e0e8520afab9000055/train/javascript
+function cookie(x) {
+  return `Who ate the last cookie? It was ${
+    typeof x === "string"
+      ? "Zach"
+      : typeof x === "number"
+      ? "Monica"
+      : "the dog"
+  }!`;
+}
