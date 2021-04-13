@@ -26,3 +26,26 @@ function pickIt(arr) {
 
   return [odd, even];
 }
+
+// Tuesday 4/13/21
+// Evil or Odious
+// https://www.codewars.com/kata/56fcfad9c7e1fa2472000034/train/javascript
+function evil(n) {
+  let str = n
+    .toString(2)
+    .split("")
+    .filter((num) => num === "1");
+  return str.length % 2 === 0 ? "It's Evil!" : "It's Odious!";
+}
+
+// Letterbox Paint-Squad
+// https://www.codewars.com/kata/597d75744f4190857a00008d/train/javascript
+var paintLetterboxes = function (start, end) {
+  const tracker = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  for (let i = start; i <= end; i++) {
+    String(i)
+      .split("")
+      .forEach((num) => tracker[num]++);
+  }
+  return tracker;
+};
