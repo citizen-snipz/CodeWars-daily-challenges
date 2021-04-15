@@ -49,3 +49,22 @@ var paintLetterboxes = function (start, end) {
   }
   return tracker;
 };
+
+// Wednesday 4/14/21
+// Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
+// https://www.codewars.com/kata/57faf12b21c84b5ba30001b0/train/javascript
+function remove(s) {
+  let str = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "!") {
+      str += "";
+    } else {
+      str += s[i];
+    }
+  }
+  return `${str}!`;
+}
+
+// Do you speak "English"?
+// https://www.codewars.com/kata/58dbdccee5ee8fa2f9000058/train/javascript
+const spEng = (sentence) => sentence.toLowerCase().includes("english");
