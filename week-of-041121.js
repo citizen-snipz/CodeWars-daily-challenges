@@ -68,3 +68,32 @@ function remove(s) {
 // Do you speak "English"?
 // https://www.codewars.com/kata/58dbdccee5ee8fa2f9000058/train/javascript
 const spEng = (sentence) => sentence.toLowerCase().includes("english");
+
+// Friday 4/16/21
+// NBA full 48 minutes average
+// https://www.codewars.com/kata/587c2d08bb65b5e8040004fd/train/javascript
+
+function pointsPer48(ppg, mpg) {
+  let avg = (ppg / mpg) * 48;
+  return +avg.toFixed(1) || 0;
+}
+
+// Polish alphabet
+// https://www.codewars.com/kata/57ab2d6072292dbf7c000039/train/javascript
+function correctPolishLetters(string) {
+  const letters = {
+    ą: "a",
+    ć: "c",
+    ę: "e",
+    ł: "l",
+    ń: "n",
+    ó: "o",
+    ś: "s",
+    ź: "z",
+    ż: "z"
+  };
+  return string
+    .split("")
+    .map((letter) => letters[letter] || letter)
+    .join("");
+}
