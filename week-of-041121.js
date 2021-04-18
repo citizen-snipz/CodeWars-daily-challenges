@@ -97,3 +97,39 @@ function correctPolishLetters(string) {
     .map((letter) => letters[letter] || letter)
     .join("");
 }
+
+// Saturday 4/17/21
+// Finish Guess the Number Game
+// https://www.codewars.com/kata/568018a64f35f0c613000054/train/javascript
+class Guesser {
+  constructor(number, lives) {
+    this.number = number;
+    this.lives = lives;
+  }
+
+  guess(n) {
+    if (this.lives < 1) error.throw("Lives ran out");
+    if (this.number === n) return true;
+    if (this.number !== n) {
+      this.lives -= 1;
+      return false;
+    }
+  }
+}
+
+// Fix your code before the garden dies!
+// https://www.codewars.com/kata/57158fb92ad763bb180004e7/train/javascript
+function rainAmount(mm) {
+  if (mm < 40) return `You need to give your plant ${40 - mm}mm of water`;
+  return "Your plant has had more than enough water for today!";
+}
+
+// Get number from string
+// https://www.codewars.com/kata/57a37f3cbb99449513000cd8/train/javascript
+function getNumberFromString(s) {
+  let nums = s
+    .split("")
+    .filter((num) => isFinite(parseFloat(num)))
+    .join("");
+  return Number(nums);
+}
