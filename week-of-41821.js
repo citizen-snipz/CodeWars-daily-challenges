@@ -26,3 +26,12 @@ function fuelPrice(litres, pricePerLitre) {
   let finalCost = cost - litres * discount[litres] || cost - litres * 0.25;
   return +finalCost.toFixed(2);
 }
+
+// Descending Order
+// https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/javascript
+function descendingOrder(n) {
+  let sorted = Array.from(n.toString())
+    .sort((a, b) => b - a)
+    .join("");
+  return +sorted;
+}
