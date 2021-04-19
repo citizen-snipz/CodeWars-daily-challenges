@@ -6,3 +6,23 @@ function XO(str) {
   let o = str.split("").filter((letter) => letter === "o" || letter === "O");
   return x.length === o.length;
 }
+
+// Monday 4/19/21
+// Fuel Calculator
+// https://www.codewars.com/kata/57b58827d2a31c57720012e8/train/javascript
+function fuelPrice(litres, pricePerLitre) {
+  let discount = {
+    1: 0.0,
+    2: 0.05,
+    3: 0.05,
+    4: 0.1,
+    5: 0.1,
+    6: 0.15,
+    7: 0.15,
+    8: 0.2,
+    9: 0.2
+  };
+  let cost = litres * pricePerLitre;
+  let finalCost = cost - litres * discount[litres] || cost - litres * 0.25;
+  return +finalCost.toFixed(2);
+}
