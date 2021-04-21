@@ -35,3 +35,34 @@ function descendingOrder(n) {
     .join("");
   return +sorted;
 }
+
+// Wednesday 4/21/21
+// Switch/Case - Bug Fixing #6
+// https://www.codewars.com/kata/55c933c115a8c426ac000082/train/javascript
+function evalObject(value) {
+  const { a, b, operation } = value;
+  var result = 0;
+  switch (operation) {
+    case "+":
+      result = a + b;
+      break;
+    case "-":
+      result = a - b;
+      break;
+    case "/":
+      result = a / b;
+      break;
+    case "*":
+      result = a * b;
+      break;
+    case "%":
+      result = a % b;
+      break;
+    case "^":
+      result = Math.pow(a, b);
+      break;
+  }
+  return result;
+}
+
+// UEFA EURO 2016
