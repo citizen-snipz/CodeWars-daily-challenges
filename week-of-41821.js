@@ -74,3 +74,12 @@ function uefaEuro2016(teams, scores) {
     ? `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`
     : `At match ${teams[0]} - ${teams[1]}, teams played draw.`;
 }
+
+// Thursday 4/22/21
+// Isograms
+// https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/javascript
+function isIsogram(str) {
+  let singles = new Set(str.toLowerCase());
+  if (str === "" || str.length === singles.size) return true;
+  return false;
+}
