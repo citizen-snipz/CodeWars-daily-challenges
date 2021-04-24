@@ -83,3 +83,8 @@ function isIsogram(str) {
   if (str === "" || str.length === singles.size) return true;
   return false;
 }
+
+// Saturday 4/24/21
+// Template Strings
+// https://www.codewars.com/kata/55a14f75ceda999ced000048/train/javascript
+const TempleStrings = (obj, feature) => `${obj} are ${feature}`;
