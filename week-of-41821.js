@@ -88,3 +88,14 @@ function isIsogram(str) {
 // Template Strings
 // https://www.codewars.com/kata/55a14f75ceda999ced000048/train/javascript
 const TempleStrings = (obj, feature) => `${obj} are ${feature}`;
+
+// Jaden Casing Strings
+// https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/javascript
+String.prototype.toJadenCase = function () {
+  return this.split(" ")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
+};
+
+// Stop gninnipS My sdroW!
+// https://www.codewars.com/kata/5264d2b162488dc400000001/train/javascript
