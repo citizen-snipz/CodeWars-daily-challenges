@@ -99,3 +99,10 @@ String.prototype.toJadenCase = function () {
 
 // Stop gninnipS My sdroW!
 // https://www.codewars.com/kata/5264d2b162488dc400000001/train/javascript
+function spinWords(string) {
+  let arr = string.split(" ");
+  let flip = arr.map((word) =>
+    word.length > 4 ? word.split("").reverse().join("") : word
+  );
+  return flip.join(" ");
+}
