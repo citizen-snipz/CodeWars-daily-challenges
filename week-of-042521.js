@@ -19,3 +19,12 @@ function DNAStrand(dna) {
     .map((letter) => swap[letter])
     .join("")}`;
 }
+
+// Monday 4/26/21
+// Credit Card Mask
+// https://www.codewars.com/kata/5412509bd436bd33920011bc/train/javascript
+// return masked string
+function maskify(cc) {
+  if (cc.length < 5) return cc;
+  return "#".repeat(cc.length - 4) + cc.slice(-4);
+}
