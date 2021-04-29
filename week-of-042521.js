@@ -35,3 +35,12 @@ function maskify(cc) {
 function solution(str, ending) {
   return str.endsWith(ending);
 }
+
+// Wednesday 4/28/21
+// Age Range Compatibility Equation
+// https://www.codewars.com/kata/5803956ddb07c5c74200144e/train/javascript
+function datingRange(age) {
+  let min = age < 15 ? Math.floor(age - 0.1 * age) : Math.floor(age / 2 + 7);
+  let max = age < 15 ? Math.floor(age + 0.1 * age) : Math.floor((age - 7) * 2);
+  return `${min}-${max}`;
+}
