@@ -18,3 +18,12 @@ function filter_list(l) {
 function oddOrEven(array) {
   return array.reduce((acc, num) => acc + num, 0) % 2 === 0 ? "even" : "odd";
 }
+
+// Reverse words
+// https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/javascript
+function reverseWords(str) {
+  return str
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
+}
