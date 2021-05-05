@@ -11,3 +11,10 @@ function sumTwoSmallestNumbers(numbers) {
 function filter_list(l) {
   return l.filter((el) => typeof el === "number");
 }
+
+// Wednesday 5/5/21
+// Odd or Even?
+// https://www.codewars.com/kata/5949481f86420f59480000e7/train/javascript
+function oddOrEven(array) {
+  return array.reduce((acc, num) => acc + num, 0) % 2 === 0 ? "even" : "odd";
+}
