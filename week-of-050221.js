@@ -27,3 +27,22 @@ function reverseWords(str) {
     .map((word) => word.split("").reverse().join(""))
     .join(" ");
 }
+
+// Thursday 5/6/21
+// The highest profit wins!
+// https://www.codewars.com/kata/559590633066759614000063/train/javascript
+function minMax(arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+}
+
+// Don't give me five!
+// https://www.codewars.com/kata/5813d19765d81c592200001a/train/javascript
+function dontGiveMeFive(start, end) {
+  let noFives = [];
+  for (let i = start; i <= end; i++) {
+    if (!String(i).includes(5)) {
+      noFives.push(i);
+    }
+  }
+  return noFives.length;
+}
