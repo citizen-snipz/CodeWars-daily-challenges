@@ -46,3 +46,21 @@ function dontGiveMeFive(start, end) {
   }
   return noFives.length;
 }
+
+// Friday 5/7/21
+// Take an Arrow to the knee, Functionally
+// https://www.codewars.com/kata/559f3123e66a7204f000009f/train/javascript
+var ArrowFunc = function (arr) {
+  return arr.map((el) => String.fromCharCode(el)).join("");
+};
+
+// Testing 1-2-3
+// https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/javascript
+const number = (array) => array.map((line, idx) => `${idx + 1}: ${line}`);
+
+// Two Oldest Ages
+// https://www.codewars.com/kata/511f11d355fe575d2c000001/train/javascript
+function twoOldestAges(ages) {
+  let filtered = [...ages].sort((a, b) => b - a).filter((age, idx) => idx < 2);
+  return filtered.reverse();
+}
