@@ -64,3 +64,10 @@ function twoOldestAges(ages) {
   let filtered = [...ages].sort((a, b) => b - a).filter((age, idx) => idx < 2);
   return filtered.reverse();
 }
+
+// Saturday 5/8/21
+// pick a set of first elements
+// https://www.codewars.com/kata/572b77262bedd351e9000076/train/javascript
+function first(arr, n = 1) {
+  return n < 0 ? [] : arr.slice(0, n);
+}
