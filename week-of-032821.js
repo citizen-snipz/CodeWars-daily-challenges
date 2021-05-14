@@ -105,6 +105,8 @@ function sumOfDifferences(arr) {
   }, 0);
 }
 
+console.log(sumOfDifferences([1, 4, 7, 12, 19]));
+
 // Highest and Lowest
 // https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
 function highAndLow(numbers) {
