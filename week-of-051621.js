@@ -15,3 +15,14 @@ const isAnagram = function (test, original) {
     original.toLowerCase().split("").sort().join("")
   );
 };
+
+// Saturday 5/22/21
+// Find the capitals
+// https://www.codewars.com/kata/539ee3b6757843632d00026b/train/javascript
+var capitals = function (word) {
+  let index = [];
+  let filtered = word.split("").filter((letter, idx) => {
+    if (letter === letter.toUpperCase()) index.push(idx);
+  });
+  return index;
+};
