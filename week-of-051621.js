@@ -26,3 +26,12 @@ var capitals = function (word) {
   });
   return index;
 };
+
+// Remove anchor from URL
+// https://www.codewars.com/kata/51f2b4448cadf20ed0000386/train/javascript
+
+function removeUrlAnchor(url) {
+  let anchor = url.indexOf("#");
+
+  return url.includes("#") ? url.slice(0, anchor) : url;
+}
