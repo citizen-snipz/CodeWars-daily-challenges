@@ -28,16 +28,3 @@ function wordValue(a) {
   }
   return arr
 }
-
-const str = "Zebras have stripes. Cheetahs have spots."
-let regex = /[a-c]/g
-
-str.match(/[A-Z]/g) // [ 'Z', 'C' ]
-str.match(regex) // [ 'b', 'a', 'a', 'a', 'a' ]
-str.match(/[0-9]/g) // null
-
-console.log(str.match(/[A-Z]/g)) // true
-console.log(str.match(regex)) // true
-console.log(str.match(/[0-9]/g)) // true
-
-//
