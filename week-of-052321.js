@@ -28,3 +28,8 @@ function wordValue(a) {
   }
   return arr
 }
+
+// Wednesday 5/26/21
+// Chuck Norris VII - True or False? (Beginner)
+// https://www.codewars.com/kata/570669d8cb7293a2d1001473/train/javascript
+const ifChuckSaysSo = () => !true
