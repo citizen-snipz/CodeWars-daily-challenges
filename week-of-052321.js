@@ -54,3 +54,8 @@ function capitalize(s) {
     .map((el, idx) => (idx % 2 === 1 ? el.toUpperCase() : el.toLowerCase()))
   return [index1.join(""), index2.join("")]
 }
+
+//Greet Me (7kyu)
+// https://www.codewars.com/kata/535474308bb336c9980006f2/train/javascript
+const greet = (name) =>
+  `Hello ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!`
