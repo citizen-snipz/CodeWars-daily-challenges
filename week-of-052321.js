@@ -59,3 +59,12 @@ function capitalize(s) {
 // https://www.codewars.com/kata/535474308bb336c9980006f2/train/javascript
 const greet = (name) =>
   `Hello ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!`
+
+//Saturday 5/29/21
+function songDecoder(song) {
+  const name = song.split("WUB").join(" ")
+  console.log(name)
+  return name
+}
+
+console.log(songDecoder("AWUBBWUBC"))
