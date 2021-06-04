@@ -12,3 +12,15 @@ function printerError(s) {
   const wrongLetters = s.split("").filter((letter) => errors.includes(letter))
   return `${wrongLetters.length}/${s.length}`
 }
+
+// Thursday 6/9/21
+// Caffeine Script (7kyu)
+// https://www.codewars.com/kata/5434283682b0fdb0420000e6/train/javascript
+function caffeineBuzz(n) {
+  let even = n % 2 === 0
+  if (n % 3 === 0 && n % 4 === 0 && even) return "CoffeeScript"
+  if (n % 3 === 0 && even) return "JavaScript"
+  if (n % 3 === 0 && n % 4 === 0) return "Coffee"
+  if (n % 3 === 0) return "Java"
+  return "mocha_missing!"
+}
