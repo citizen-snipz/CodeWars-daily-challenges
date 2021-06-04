@@ -24,3 +24,16 @@ function caffeineBuzz(n) {
   if (n % 3 === 0) return "Java"
   return "mocha_missing!"
 }
+
+// Friday 6/4/21
+// Find the divisors! (7kyu)
+// https://www.codewars.com/kata/544aed4c4a30184e960010f4/train/javascript
+function divisors(integer) {
+  let divisible = []
+  for (let i = 2; i < integer; i++) {
+    if (integer % i === 0) {
+      divisible.push(i)
+    }
+  }
+  return divisible.length > 0 ? divisible : `${integer} is prime`
+}
