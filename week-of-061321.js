@@ -12,3 +12,5 @@ const sequenceSum = (begin, end, step) => {
     return count
   }
 }
+
+//Wednesday 6/16/21
