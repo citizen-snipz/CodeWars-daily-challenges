@@ -13,4 +13,24 @@ const sequenceSum = (begin, end, step) => {
   }
 }
 
-//Wednesday 6/16/21
+// Wednesday 6/16/21
+// Growth of a Population (7kyu)
+// https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript
+
+function nbYear(population, percent, newPeople, target) {
+  let years = 0
+  let pop = population
+
+  while (pop < target) {
+    years++
+    pop = pop + (pop * percent) / 100 + newPeople
+  }
+
+  return years
+}
+
+//ES6 string addition (8kyu)
+// https://www.codewars.com/kata/582e4c3406e37fcc770001ad/train/javascript
+function joinStrings(string1, string2) {
+  return `${string1} ${string2}`
+}
