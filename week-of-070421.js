@@ -9,3 +9,11 @@ String.prototype.camelCase = function () {
         .join("")
     : ""
 }
+
+// Tuesday 7/6/21
+// Remove duplicate words
+//https://www.codewars.com/kata/5b39e3772ae7545f650000fc/train/javascript
+function removeDuplicateWords(s) {
+  let sArr = s.split(" ")
+  return [...new Set(sArr)].join(" ")
+}
