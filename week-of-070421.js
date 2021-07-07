@@ -25,3 +25,18 @@ function toCsvText(array) {
   const text = array.join("\n")
   return `${text}`
 }
+
+// Wednesday 7/7/21
+// Most digits (7kyu)
+// https://www.codewars.com/kata/58daa7617332e59593000006/train/javascript
+function findLongest(array) {
+  let length = "1"
+  const string = array.map((num) => num.toString())
+  for (let i = 0; i < string.length; i++) {
+    if (string[i].length > length.length) {
+      length = string[i]
+    }
+  }
+  const filtered = string.filter((num) => num.length == length.length)
+  return +filtered[0]
+}
