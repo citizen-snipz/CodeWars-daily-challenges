@@ -183,3 +183,32 @@ function captializeName(str) {
   return str[0].toUpperCase() + str.slice(1).toLowerCase()
 }
 console.log(captializeName("leon"))
+
+// Create a function truncate(str, maxlength) that checks the length of the str and, if it exceeds maxlength – replaces the end of str with the ellipsis character "…", to make its length equal to maxlength.
+
+// The result of the function should be the truncated (if needed) string.
+
+// For instance:
+
+// truncate("What I'd like to tell on this topic is:", 20) = "What I'd like to te…"
+
+// truncate("Hi everyone!", 20) = "Hi everyone!"
+
+//P: Will my function take in two parameters? Will the first param always be a string? Will the string ever be empty? Will maxlength always be an integer?
+//R: Will my return be a string? Will the ellipsis be considered part of the truncated length?
+//E: see above
+//P:
+/* 
+  Make a function that takes in two params, str and maxlength
+  check the length of the string
+  if string > maxlength, truncate 
+  else return whole string
+*/
+
+function truncate(str, maxLength) {
+  return str.length <= maxLength ? str : str.slice(0, maxLength - 1) + "..."
+}
+
+console.log(truncate("What I'd like to tell on this topic is:", 20))
+
+console.log(truncate("Hi everyone!", 20))
