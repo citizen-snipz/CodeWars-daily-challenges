@@ -159,3 +159,27 @@ console.log(
     "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
   )
 )
+
+//Create a function that returns the capitilization of a name. No Arrays, No REGEX!
+//leon ~> Leon
+//bob ~> Bob
+//John ~> John
+
+// P: Will I only receive a string? Will it ever start with a number? Will they already be capitalised? Will you ever not want to capitalise the first letter?
+// R: Am I returning a string that only capitalizes the first letter? Should the returned string contain only letters?
+// E: see above
+//leon ~> Leon
+//bob ~> Bob
+//John ~> John
+// P:
+/* 
+  Make a function that takes in a string
+  capitalise the first letter in the string
+  convert all other letters to lowercase
+  return string
+*/
+
+function captializeName(str) {
+  return str[0].toUpperCase() + str.slice(1).toLowerCase()
+}
+console.log(captializeName("leon"))
