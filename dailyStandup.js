@@ -212,3 +212,27 @@ function truncate(str, maxLength) {
 console.log(truncate("What I'd like to tell on this topic is:", 20))
 
 console.log(truncate("Hi everyone!", 20))
+
+// Write a function checkForImposterSyndrome(str) that returns true if str contains 'not ready' or "can't interview yet", otherwise false
+
+// P: will my function only take in a string? Will be different capitalization that I should account for? Will there ever be an empty string?
+// R: Am I returning a boolean?
+// E: "I'm ready to interview!" => false
+//    "I can't interview yet!" => true
+//"The pizza is ready!" => false
+// P:
+
+//Make a function that takes in a string
+function checkForImposterSyndrome(str) {
+  str = str.toLowerCase()
+  //check if the string includes "not ready" or "can't interview yet"
+  return str.includes("not ready") || str.includes("can't interview yet")
+}
+
+//if the str has either within it, return tru
+//else return false
+
+console.log(checkForImposterSyndrome("I'm ready to interview!"))
+console.log(checkForImposterSyndrome("I can't interview yet!"))
+console.log(checkForImposterSyndrome("The pizza is ready"))
+console.log(checkForImposterSyndrome("The pizza is NOT ready"))
